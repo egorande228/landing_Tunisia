@@ -8,6 +8,11 @@ type TunisiaTranslations = {
   partnership: MarketContent;
 };
 
+const referrals = {
+  sport: "https://refpa3665.com/L?tag=d_4092175m_66329c_TunisiaSport",
+  main: "https://refpa3665.com/L?tag=d_4092175m_66329c_MLBTunisia26",
+} as const;
+
 const routes = {
   home: "/",
   top: "/#top",
@@ -15,7 +20,7 @@ const routes = {
   sports: "/#sports",
   trust: "/#trust",
   offers: "/#offers",
-  play: "/#play",
+  play: referrals.main,
   agent: "/agent",
   partnership: "/partnership",
   partnershipTop: "/partnership#top",
@@ -27,9 +32,9 @@ const routes = {
 } as const;
 
 const channels = {
-  whatsapp: "https://wa.me/21655011223",
-  telegram: "https://t.me/tunisia_partner_desk",
-  email: "mailto:partners@tunisiadesk.com",
+  whatsapp: "https://t.me/Teamcash_TUNISIA",
+  telegram: "https://t.me/Teamcash_TUNISIA",
+  email: "mailto:PAYPARTNERS-NORTHAFRICA@MELBET.COM",
 } as const;
 
 export const translations = {
@@ -165,7 +170,7 @@ export const translations = {
                 { label: "pace", value: "high" },
                 { label: "best use", value: "match nights" },
               ],
-              href: routes.sports,
+              href: referrals.sport,
               ctaLabel: "See live sports",
               visual: {
                 kind: "image",
@@ -218,7 +223,7 @@ export const translations = {
             rating: 4.9,
             stats: ["quick cashout"],
             metric: "player score",
-            href: routes.play,
+            href: referrals.main,
             ctaLabel: "Get access",
             visual: {
               kind: "icon",
@@ -237,7 +242,7 @@ export const translations = {
             rating: 4.7,
             stats: ["quick spins"],
             metric: "player score",
-            href: routes.games,
+            href: referrals.main,
             ctaLabel: "See games",
             visual: {
               kind: "icon",
@@ -256,7 +261,7 @@ export const translations = {
             rating: 4.6,
             stats: ["live rooms"],
             metric: "player score",
-            href: routes.play,
+            href: referrals.main,
             ctaLabel: "Open access",
             visual: {
               kind: "icon",
@@ -277,7 +282,7 @@ export const translations = {
             rating: 4.5,
             stats: ["easy entry"],
             metric: "player score",
-            href: routes.games,
+            href: referrals.main,
             ctaLabel: "See games",
             visual: {
               kind: "icon",
@@ -296,7 +301,7 @@ export const translations = {
             rating: 4.8,
             stats: ["clear flow"],
             metric: "player score",
-            href: routes.play,
+            href: referrals.main,
             ctaLabel: "Get access",
             visual: {
               kind: "icon",
@@ -315,7 +320,7 @@ export const translations = {
             rating: 4.7,
             stats: ["quick preview"],
             metric: "player score",
-            href: routes.top,
+            href: referrals.main,
             ctaLabel: "Back to top",
             visual: {
               kind: "icon",
@@ -340,7 +345,7 @@ export const translations = {
             description:
               "Back the biggest matches, chase the big moments, and stay close to the action all night.",
             tags: ["live football", "big leagues", "matchday rush"],
-            href: routes.play,
+            href: referrals.sport,
             visual: {
               kind: "icon",
               icon: "football",
@@ -356,7 +361,7 @@ export const translations = {
             description:
               "Follow fast breaks, quarter swings, and quick live movement built for mobile match nights.",
             tags: ["fast breaks", "quarter lines", "live pace"],
-            href: routes.play,
+            href: referrals.sport,
             visual: {
               kind: "icon",
               icon: "basketball",
@@ -372,7 +377,7 @@ export const translations = {
             description:
               "Follow quick shifts, pressure plays, and fast live movement on the ice.",
             tags: ["power plays", "fast shifts", "live ice"],
-            href: routes.play,
+            href: referrals.sport,
             visual: {
               kind: "icon",
               icon: "signal",
@@ -388,7 +393,7 @@ export const translations = {
             description:
               "Follow competitive games, live maps, team fights, and momentum shifts from the arena.",
             tags: ["live maps", "team fights", "gaming arena"],
-            href: routes.play,
+            href: referrals.sport,
             visual: {
               kind: "icon",
               icon: "esports",
@@ -465,7 +470,7 @@ export const translations = {
               "live action on demand",
               "more sports in one place",
             ],
-            href: routes.sports,
+            href: referrals.sport,
             ctaLabel: "See sports",
             linkText: "Need help getting started?",
             linkHref: routes.play,
@@ -490,9 +495,9 @@ export const translations = {
             ],
             inlineCta: {
               label: "Become an agent",
-              href: routes.agent,
+              href: channels.telegram,
             },
-            href: routes.play,
+            href: channels.telegram,
             ctaLabel: "Start now",
             visual: {
               kind: "image",
@@ -999,7 +1004,7 @@ export const translations = {
                 { label: "rythme", value: "élevé" },
                 { label: "idéal pour", value: "soirées match" },
               ],
-              href: routes.sports,
+              href: referrals.sport,
               ctaLabel: "Voir les sports",
               visual: {
                 kind: "image",
@@ -1052,7 +1057,7 @@ export const translations = {
             rating: 4.9,
             stats: ["cashout rapide"],
             metric: "note joueur",
-            href: routes.play,
+            href: referrals.main,
             ctaLabel: "Obtenir l'accès",
             visual: {
               kind: "icon",
@@ -1071,7 +1076,7 @@ export const translations = {
             rating: 4.7,
             stats: ["spins rapides"],
             metric: "note joueur",
-            href: routes.games,
+            href: referrals.main,
             ctaLabel: "Voir les jeux",
             visual: {
               kind: "icon",
@@ -1090,7 +1095,7 @@ export const translations = {
             rating: 4.6,
             stats: ["salles live"],
             metric: "note joueur",
-            href: routes.play,
+            href: referrals.main,
             ctaLabel: "Ouvrir l'accès",
             visual: {
               kind: "icon",
@@ -1111,7 +1116,7 @@ export const translations = {
             rating: 4.5,
             stats: ["entrée simple"],
             metric: "note joueur",
-            href: routes.games,
+            href: referrals.main,
             ctaLabel: "Voir les jeux",
             visual: {
               kind: "icon",
@@ -1130,7 +1135,7 @@ export const translations = {
             rating: 4.8,
             stats: ["flux clair"],
             metric: "note joueur",
-            href: routes.play,
+            href: referrals.main,
             ctaLabel: "Obtenir l'accès",
             visual: {
               kind: "icon",
@@ -1149,7 +1154,7 @@ export const translations = {
             rating: 4.7,
             stats: ["aperçu rapide"],
             metric: "note joueur",
-            href: routes.top,
+            href: referrals.main,
             ctaLabel: "Retour en haut",
             visual: {
               kind: "icon",
@@ -1174,7 +1179,7 @@ export const translations = {
             description:
               "Soirées de championnat, combinés, et pics live autour des plus gros matchs.",
             tags: ["football live", "grands championnats", "soir de match"],
-            href: routes.play,
+            href: referrals.sport,
             visual: {
               kind: "icon",
               icon: "football",
@@ -1190,7 +1195,7 @@ export const translations = {
             description:
               "Fenêtres plus courtes, mouvements plus rapides, et meilleur rythme en direct.",
             tags: ["lignes rapides", "rythme live", "updates rapides"],
-            href: routes.play,
+            href: referrals.sport,
             visual: {
               kind: "icon",
               icon: "basketball",
@@ -1206,7 +1211,7 @@ export const translations = {
             description:
               "Actions rapides, pression sur la glace et rythme live facile a suivre.",
             tags: ["glace rapide", "power plays", "live"],
-            href: routes.play,
+            href: referrals.sport,
             visual: {
               kind: "icon",
               icon: "signal",
@@ -1222,7 +1227,7 @@ export const translations = {
             description:
               "Des cartes événementielles qui donnent plus de relief à l'accueil sans le surcharger.",
             tags: ["headline cards", "pics week-end", "focus événement"],
-            href: routes.play,
+            href: referrals.sport,
             visual: {
               kind: "icon",
               icon: "signal",
@@ -1299,7 +1304,7 @@ export const translations = {
               "action live a suivre",
               "plus de sports au meme endroit",
             ],
-            href: routes.sports,
+            href: referrals.sport,
             ctaLabel: "Voir les sports",
             linkText: "Besoin d'aide pour commencer ?",
             linkHref: routes.play,
@@ -1324,9 +1329,9 @@ export const translations = {
             ],
             inlineCta: {
               label: "Devenir agent",
-              href: routes.agent,
+              href: channels.telegram,
             },
-            href: routes.play,
+            href: channels.telegram,
             ctaLabel: "Commencer",
             visual: {
               kind: "image",
@@ -1834,7 +1839,7 @@ export const translations = {
                 { label: "الإيقاع", value: "عالٍ" },
                 { label: "مناسب لـ", value: "ليالي المباريات" },
               ],
-              href: routes.sports,
+              href: referrals.sport,
               ctaLabel: "شاهد الرياضات",
               visual: {
                 kind: "image",
@@ -1887,7 +1892,7 @@ export const translations = {
             rating: 4.9,
             stats: ["سحب سريع"],
             metric: "تقييم اللاعبين",
-            href: routes.play,
+            href: referrals.main,
             ctaLabel: "احصل على الوصول",
             visual: {
               kind: "icon",
@@ -1906,7 +1911,7 @@ export const translations = {
             rating: 4.7,
             stats: ["لفات سريعة"],
             metric: "تقييم اللاعبين",
-            href: routes.games,
+            href: referrals.main,
             ctaLabel: "شاهد الألعاب",
             visual: {
               kind: "icon",
@@ -1925,7 +1930,7 @@ export const translations = {
             rating: 4.6,
             stats: ["غرف مباشرة"],
             metric: "تقييم اللاعبين",
-            href: routes.play,
+            href: referrals.main,
             ctaLabel: "افتح الوصول",
             visual: {
               kind: "icon",
@@ -1946,7 +1951,7 @@ export const translations = {
             rating: 4.5,
             stats: ["دخول سهل"],
             metric: "تقييم اللاعبين",
-            href: routes.games,
+            href: referrals.main,
             ctaLabel: "شاهد الألعاب",
             visual: {
               kind: "icon",
@@ -1965,7 +1970,7 @@ export const translations = {
             rating: 4.8,
             stats: ["تدفق واضح"],
             metric: "تقييم اللاعبين",
-            href: routes.play,
+            href: referrals.main,
             ctaLabel: "احصل على الوصول",
             visual: {
               kind: "icon",
@@ -1984,7 +1989,7 @@ export const translations = {
             rating: 4.7,
             stats: ["معاينة سريعة"],
             metric: "تقييم اللاعبين",
-            href: routes.top,
+            href: referrals.main,
             ctaLabel: "العودة للأعلى",
             visual: {
               kind: "icon",
@@ -2009,7 +2014,7 @@ export const translations = {
             description:
               "ليالي الدوريات، التجميعات، والذروات المباشرة حول أهم المباريات.",
             tags: ["مباريات مباشرة", "تجميعات", "أهم الدوريات"],
-            href: routes.play,
+            href: referrals.sport,
             visual: {
               kind: "icon",
               icon: "football",
@@ -2025,7 +2030,7 @@ export const translations = {
             description:
               "نوافذ أقصر وتحولات أسرع وإيقاع أفضل أثناء اللعب المباشر.",
             tags: ["أرباع", "إيقاع مباشر", "تحديث سريع"],
-            href: routes.play,
+            href: referrals.sport,
             visual: {
               kind: "icon",
               icon: "basketball",
@@ -2041,7 +2046,7 @@ export const translations = {
             description:
               "حركة نقطة بنقطة للاعب الذي يريد تحولات أوضح وأسرع.",
             tags: ["مجموعات", "تحولات مباشرة", "قراءة أوضح"],
-            href: routes.play,
+            href: referrals.sport,
             visual: {
               kind: "icon",
               icon: "tennis",
@@ -2057,7 +2062,7 @@ export const translations = {
             description:
               "بطاقات حدث تعطي الصفحة طاقة إضافية من دون أن تصبح مزدحمة.",
             tags: ["بطاقات رئيسية", "ذروة أسبوعية", "تركيز على الحدث"],
-            href: routes.play,
+            href: referrals.sport,
             visual: {
               kind: "icon",
               icon: "signal",
@@ -2134,7 +2139,7 @@ export const translations = {
               "حركة مباشرة طوال الوقت",
               "رياضات اكثر في مكان واحد",
             ],
-            href: routes.sports,
+            href: referrals.sport,
             ctaLabel: "شاهد الرياضات",
             linkText: "هل تحتاج لمسار شراكة؟",
             linkHref: routes.finalCta,
@@ -2159,9 +2164,9 @@ export const translations = {
             ],
             inlineCta: {
               label: "كن وكيلاً",
-              href: routes.agent,
+              href: channels.telegram,
             },
-            href: routes.play,
+            href: channels.telegram,
             ctaLabel: "ابدأ الآن",
             visual: {
               kind: "image",
