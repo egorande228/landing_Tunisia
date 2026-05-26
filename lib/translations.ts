@@ -31,7 +31,7 @@ const routes = {
   finalCta: "/partnership#final-cta",
 } as const;
 
-const channels = {
+export const channels = {
   whatsapp: "https://t.me/Teamcash_TUNISIA",
   telegram: "https://t.me/Teamcash_TUNISIA",
   email: "mailto:PAYPARTNERS-NORTHAFRICA@MELBET.COM",

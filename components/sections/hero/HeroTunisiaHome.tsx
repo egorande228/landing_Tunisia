@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 import SectionShell from "@/components/layout/SectionShell";
 import Button from "@/components/ui/Button";
+import { channels } from "@/lib/translations";
 import type { HomeHeroContent } from "@/schemas/landing";
 import { hoverLift, prepareReveal, pulseGlow, revealScale, revealUp, stopAnimation } from "@/motion/presets";
 import { observeOnce, prefersReducedMotion } from "@/motion/observers";
@@ -147,6 +148,27 @@ export default function HeroTunisiaHome({ content, direction }: HeroProps) {
                   {content.secondaryCta.label}
                 </Button>
               ) : null}
+            </div>
+            <div data-home-copy className="w-full max-w-[360px] rounded-[18px] border border-white/10 bg-white/[0.04] p-3 shadow-[0_14px_36px_rgba(0,0,0,0.18)] backdrop-blur">
+              <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-[var(--color-foreground-soft)]">
+                For partnership contact
+              </p>
+              <div className="grid grid-cols-2 gap-2">
+                <a
+                  href={channels.telegram}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex min-h-[42px] items-center justify-center rounded-[14px] border border-white/10 bg-white/[0.06] px-4 text-[14px] font-semibold text-[var(--color-foreground)] transition hover:-translate-y-0.5 hover:bg-white/[0.09]"
+                >
+                  Telegram
+                </a>
+                <a
+                  href={channels.email}
+                  className="inline-flex min-h-[42px] items-center justify-center rounded-[14px] border border-white/10 bg-white/[0.06] px-4 text-[14px] font-semibold text-[var(--color-foreground)] transition hover:-translate-y-0.5 hover:bg-white/[0.09]"
+                >
+                  Mail
+                </a>
+              </div>
             </div>
           </div>
         </div>
