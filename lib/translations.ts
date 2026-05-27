@@ -101,6 +101,11 @@ export const translations = {
           label: "Browse games",
           href: routes.games,
         },
+        partnerContact: {
+          eyebrow: "For partnership contact",
+          telegram: "Telegram",
+          mail: "Mail",
+        },
         stats: [
           {
             label: "fast picks",
@@ -934,6 +939,11 @@ export const translations = {
         secondaryCta: {
           label: "Voir les jeux",
           href: routes.games,
+        },
+        partnerContact: {
+          eyebrow: "Contact partenariat",
+          telegram: "Telegram",
+          mail: "Mail",
         },
         stats: [
           {
@@ -1769,6 +1779,11 @@ export const translations = {
         secondaryCta: {
           label: "شاهد الألعاب",
           href: routes.games,
+        },
+        partnerContact: {
+          eyebrow: "للتواصل بخصوص الشراكة",
+          telegram: "تيليجرام",
+          mail: "البريد",
         },
         stats: [
           {

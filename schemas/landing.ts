@@ -144,6 +144,11 @@ export type HomeHeroContent = {
   body: string;
   primaryCta: LinkItem;
   secondaryCta?: LinkItem;
+  partnerContact?: {
+    eyebrow: string;
+    telegram: string;
+    mail: string;
+  };
   stats?: StatItem[];
   highlights?: string[];
   stage: {
